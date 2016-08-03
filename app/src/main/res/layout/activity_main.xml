@@ -9,8 +9,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tayyabali.goalplanner.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="278dp"
+            android:layout_height="310dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/Goals"
+            android:layout_weight="0.41" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login via Facebook"
+            android:id="@+id/facebook"
+            android:layout_gravity="center_horizontal"
+            android:background="#3b5998"
+            android:layout_margin="8dp"
+            android:textColor="#ffffffff" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login via Twitter"
+            android:id="@+id/twitter"
+            android:layout_gravity="center_horizontal"
+            android:background="#55ACEE"
+            android:layout_margin="8dp"
+            android:textColor="#ffffffff"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login via LinkedIn"
+            android:id="@+id/linkedin"
+            android:layout_gravity="center_horizontal"
+            android:background="#287bbc"
+            android:layout_margin="8dp"
+            android:textColor="#ffffffff"/>
+    </LinearLayout>
 </RelativeLayout>
